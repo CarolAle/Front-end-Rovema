@@ -1,0 +1,471 @@
+* {
+    outline: none;
+}
+a {
+    text-decoration: none!important;
+    cursor: pointer!important;
+}
+p {
+    line-height: 1.5;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    height: 410px;
+}
+
+.navbar {
+    background: #cfcdba;
+    border-color: transparent;
+    height: 410px;
+    border-radius: 0;
+    margin-bottom: 0px;
+    border: none;
+    background-image: url('../images/bg-topo.png');
+    position: relative;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+.navbar-header .navbar-brand {
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+    margin-bottom: auto;
+}
+.logo-branca {
+    display: none!important;
+}
+#navbarNav {
+    float: right;
+    height: 110px;
+    padding: 0;
+    margin-right: 40px;
+    margin-bottom: auto;
+}
+.navbar-header img {
+    margin-left: 15px;
+}
+ul.nav {
+    display: flex;
+    align-items: center;
+}
+ul.nav>li>a {
+    font-family: 'Global Bold', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 13px;
+}
+ul.nav>li>a:hover {
+    font-weight: 700;
+    color: #f7c200;
+}
+ul.nav>li>ul {
+    background-color: #cfcdba;
+}
+
+.btn-geral {
+    padding: 10px 30px;
+    color: #003b88!important;
+    background-color: #f7c200;
+    border-radius: 30px;
+}
+
+.btn-geral:hover {
+    opacity: 0.7;
+}
+
+header .titulo {
+    margin: 57px 130px;
+    float: left;
+    width: 550px;
+    text-align: left;
+    color: #fff;
+    font-size: 28px;
+    position: relative;
+    bottom: 300px;
+}
+
+/*SOBRE*/
+
+.sustentabilidade {
+    margin: 40px 0;
+}
+
+.sustentabilidade h2 {
+    color: #003b88;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.sustentabilidade h1 {
+    color: #127681;
+    font-size: 110px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.sustentabilidade .sobre {
+    margin: 40px 200px;
+}
+
+.sustentabilidade .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sustentabilidade .box-info {
+    position: relative;
+    top: -90px;
+    right: 46px;
+}
+
+.sustentabilidade .box-info h3 {
+    position: relative;
+    width: 20px;
+    left: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sustentabilidade .box-info .box-natureza {
+    border-bottom: 4px solid #ff3171;
+    color: #ff3171;
+    
+}
+
+.sustentabilidade .box-info .box-tecnologia {
+    border-bottom: 4px solid #f7c200;
+    color: #f7c200; 
+}
+
+.sustentabilidade .box-info .box-energia {
+    border-bottom: 4px solid #127681;
+    color: #127681; 
+}
+
+.sustentabilidade .box-info .box-valor {
+    border-bottom: 4px solid #b5b28d;
+    color: #b5b28d; 
+}
+
+.sustentabilidade .ver-mais {
+    padding: 11px;
+    background-color: #b5b28d;
+    border-radius: 100px;
+    color: #fff;
+}
+
+/* CALCULADORA */
+
+#calculadora, #planos, #blog {
+    margin: 50px;
+    text-align: initial;
+}
+#calculadora h2, #planos h2, #blog h2 {
+    text-align: justify;
+    color: #003b88;
+    font-weight: bolder;
+}
+
+#calculadora form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#calculadora .items {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#calculadora .itens {
+    padding: 7px 25px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+#calculadora .itens:hover {
+    color: #fff;
+    background-color: #585858;
+}
+
+#calculadora .add a {
+    color: #000;
+    margin-right: 10px;
+}
+
+#calculadora .add {
+    display: flex;
+    justify-content: space-between;
+}
+
+#calculadora .add .fa {
+    color: #ff3171;
+    margin-right: 5px;
+}
+
+/* PLANO */
+
+#planos .plano {
+    display: flex;
+    justify-content: center;
+}
+
+#planos .card-blue{
+    height: 290px;
+    margin: 0 10px;
+    background-color: #003b88;
+    color: #fff;
+    border-radius: 16px;
+    width: 250px;
+}
+
+#planos .card-white{
+    height: 290px;
+    margin: 0 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 16px;
+    width: 250px;
+}
+
+#planos .card-green{
+    height: 290px;
+    margin: 0 10px;
+    background-color: #127681;
+    color: #fff;
+    border-radius: 16px;
+    width: 250px;
+}
+
+#planos .card-header {
+    border-bottom: 1px solid #fff;
+}
+
+#planos .card-header .valor {
+    color: #f7c200;
+    font-size: 46px;
+}
+
+#planos .card-blue .card-footer {
+    background-color: #17529f;
+    border-radius: 16px;
+}
+
+#planos .card-white .card-footer {
+    background-color: #fff;
+    border-radius: 16px;
+    border-top: 0;
+}
+
+#planos .card-green .card-footer {
+    background-color: #3098a3;
+    border-radius: 16px;
+}
+
+#planos .card-footer .card-text {
+    font-weight: bolder;
+    font-size: 27px;
+}
+
+/* BLOG */
+.card-blog {
+    max-width: 700px;
+    align-content: center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#blog .card-title, text-muted {
+    font-weight: bold;
+}
+
+#blog .card-body {
+    padding: 37px;
+}
+
+#blog .card-img {
+    height: 245px;
+    object-fit: cover;
+}
+
+#blog .card-secundario {
+    display: flex;
+}
+
+#blog .card-secundario .card {
+    border-right: 1px solid #000;
+    padding: 20px;
+    align-items: center;
+    border-radius: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+#blog .card-secundario .card-title {
+    text-align: center;
+}
+
+#blog .card-secundario .btn-dica {
+    padding: 2px 30px;
+    color: #fff !important;
+    background-color: #ff3171;
+    border-radius: 30px;
+    width: auto;
+    text-align: center;
+}
+
+#blog .card-secundario .btn-info {
+    padding: 2px 30px;
+    color: #fff !important;
+    background-color: #127681;
+    border-radius: 30px;
+    width: auto;
+    text-align: center;
+}
+
+#formulario .form {
+    display: flex;
+    background-color: #003b88;
+    padding: 30px;
+    color: #fff;
+    text-align: initial;
+}
+
+#formulario .form-text, #formulario form {
+    width: 50%;
+}
+
+#formulario .form-text .fa {
+    color: #fff;
+    margin-right: 10px;
+
+}
+#formulario .form-text .fa:hover {
+    opacity: 0.6;
+}
+
+/* FOOTER */
+.rodape {
+    display: flex;
+    background-color: #0f4fa3;
+    color: #fff;
+    justify-content: space-around;
+    text-align: initial;
+    padding: 40px;
+}
+
+.rodape .localiza {
+    width: 30%;
+}
+
+.rodape .localiza h3 {
+    font-size: 15px;
+    color: #f7c200;
+    font-weight: bold;
+}
+
+.rodape .localiza p {
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    #navbarNav {
+        float: none;
+        background: #e7e7e7;
+        z-index: 300;
+        position: relative;
+        min-height: 300px;
+        height: 100%;
+        padding: 10px 30px;
+        width: 100%;
+        margin: 0 auto;
+        top: -30px;
+    }
+    
+    .navbar-toggle {
+        padding: 15px 15px;
+        margin-top: 20px;
+    }
+    .navbar-toggle {
+        margin-top: 75px;
+    }
+    .navbar-header {
+        height: 90px;
+    }
+    #menu ul.nav.navbar-nav {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    #menu ul.nav.navbar-nav>li {
+        margin-bottom: 20px;
+    }
+    .navbar-nav {
+        width: 100%;
+        height: auto!important;
+        float: none;
+        text-align: center;
+        display: block!important;
+        margin: 10px 0 0 0;
+    }
+    .navbar-nav>li>a {
+        padding: 15px 10px!important;
+    }
+    .sustentabilidade h2  {
+        font-size: 20px;
+    }
+    .sustentabilidade h1 {
+        font-size: 30px;
+    }
+    .sustentabilidade .sobre {
+        margin: 0;
+    }
+    .sustentabilidade .box, #planos .plano, #blog .card-secundario, 
+    #formulario .form {
+        flex-direction: column;
+    }
+    #calculadora form, #calculadora .items {
+        flex-wrap: wrap;
+    }
+    #calculadora h2, #planos h2, #blog h2 {
+        font-size: 18px;
+    }
+    #formulario .form-text, #formulario form {
+        width: 100%;
+    }
+    #planos .card-white {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .sustentabilidade .box-info {
+        right: auto;
+    }
+
+}
