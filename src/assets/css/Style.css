@@ -96,6 +96,9 @@ ul.nav>li>ul {
 .btn-geral:hover {
     opacity: 0.7;
 }
+html{
+    scroll-behavior: smooth;
+ }
 
 header .titulo {
     margin: 57px 130px;
@@ -103,46 +106,54 @@ header .titulo {
     width: 550px;
     text-align: left;
     color: #fff;
-    font-size: 28px;
     position: relative;
     bottom: 300px;
 }
 
+header .titulo h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
 /*SOBRE*/
 
-.sustentabilidade {
+#sustentabilidade {
     margin: 40px 0;
 }
 
-.sustentabilidade h2 {
+#sustentabilidade h2 {
     color: #003b88;
     font-size: 40px;
     margin-bottom: 0;
 }
 
-.sustentabilidade h1 {
+#sustentabilidade h1 {
     color: #127681;
     font-size: 110px;
     font-weight: bold;
     margin-top: 0;
 }
 
-.sustentabilidade .sobre {
+#sustentabilidade .sobre {
     margin: 40px 200px;
 }
 
-.sustentabilidade .box {
+#sustentabilidade .box {
     display: flex;
     justify-content: space-between;
 }
 
-.sustentabilidade .box-info {
+#sustentabilidade .box-info {
     position: relative;
     top: -90px;
     right: 46px;
 }
 
-.sustentabilidade .box-info h3 {
+#sustentabilidade .box-item img {
+    width: 100%
+} 
+
+#sustentabilidade .box-info h3 {
     position: relative;
     width: 20px;
     left: 60px;
@@ -150,38 +161,42 @@ header .titulo {
     font-weight: bold;
 }
 
-.sustentabilidade .box-info .box-natureza {
+#sustentabilidade .box-info .box-natureza {
     border-bottom: 4px solid #ff3171;
     color: #ff3171;
     
 }
 
-.sustentabilidade .box-info .box-tecnologia {
+#sustentabilidade .box-info .box-tecnologia {
     border-bottom: 4px solid #f7c200;
     color: #f7c200; 
 }
 
-.sustentabilidade .box-info .box-energia {
+#sustentabilidade .box-info .box-energia {
     border-bottom: 4px solid #127681;
     color: #127681; 
 }
 
-.sustentabilidade .box-info .box-valor {
+#sustentabilidade .box-info .box-valor {
     border-bottom: 4px solid #b5b28d;
     color: #b5b28d; 
 }
 
-.sustentabilidade .ver-mais {
+#sustentabilidade .ver-mais {
     padding: 11px;
     background-color: #b5b28d;
     border-radius: 100px;
     color: #fff;
 }
 
+#sustentabilidade .ver-mais:visited {
+    display: none;
+}
+
 /* CALCULADORA */
 
 #calculadora, #planos, #blog {
-    margin: 50px;
+    margin: 70px 0;
     text-align: initial;
 }
 #calculadora h2, #planos h2, #blog h2 {
@@ -293,6 +308,9 @@ header .titulo {
 }
 
 /* BLOG */
+#blog .row {
+    justify-content: center;
+}
 .card-blog {
     max-width: 700px;
     align-content: center;
@@ -398,23 +416,21 @@ header .titulo {
 @media (max-width: 767px) {
     #navbarNav {
         float: none;
-        background: #e7e7e7;
+        background: #003b88;
         z-index: 300;
         position: relative;
         min-height: 300px;
-        height: 100%;
+        height: 83%;
         padding: 10px 30px;
         width: 100%;
         margin: 0 auto;
-        top: -30px;
+        top: -300px;
     }
-    
-    .navbar-toggle {
+
+    .navbar-toggler {
+        margin-bottom: 300px;
         padding: 15px 15px;
         margin-top: 20px;
-    }
-    .navbar-toggle {
-        margin-top: 75px;
     }
     .navbar-header {
         height: 90px;
@@ -437,22 +453,39 @@ header .titulo {
     }
     .navbar-nav>li>a {
         padding: 15px 10px!important;
+        color: #fff!important;
+        font-weight: bold;
     }
-    .sustentabilidade h2  {
+    header .titulo {
+        margin: 27px 30px;
+    }
+    header .titulo h1 {
         font-size: 20px;
     }
-    .sustentabilidade h1 {
+    #sustentabilidade .box-item {
+        width: 50%
+    }
+    #sustentabilidade h2  {
+        font-size: 20px;
+    }
+    #sustentabilidade h1 {
         font-size: 30px;
     }
-    .sustentabilidade .sobre {
+    #sustentabilidade .box-info {
+        top: -55px;
+    }
+    #sustentabilidade .box-info h3 {
+        font-size: 15px;
+    }
+    #sustentabilidade .sobre {
         margin: 0;
     }
-    .sustentabilidade .box, #planos .plano, #blog .card-secundario, 
+    #sustentabilidade .box, #calculadora form, #calculadora .items {
+        flex-wrap: wrap
+    }
+    #planos .plano, #blog .card-secundario, 
     #formulario .form {
         flex-direction: column;
-    }
-    #calculadora form, #calculadora .items {
-        flex-wrap: wrap;
     }
     #calculadora h2, #planos h2, #blog h2 {
         font-size: 18px;
@@ -464,8 +497,29 @@ header .titulo {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .sustentabilidade .box-info {
-        right: auto;
-    }
 
+}
+
+@media (min-width: 768px) and (max-width: 1050px) {
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+    #navbarNav {
+        margin-right: 0;
+    }
+    .nav img {
+        width: 150px;
+    }
+    .btn-geral {
+        padding: 10px 9px;
+    }
+    #calculadora .itens {
+        padding: 7px 15px;
+    }
+    #sustentabilidade h1 {
+        font-size: 80px;
+    }
+    header .titulo {
+        margin: 27px 95px;
+    }
 }

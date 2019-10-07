@@ -6,7 +6,6 @@ import imgblog from '../assets/images/img-blog.png'
 export default props =>
     <section id="blog">
         <div className="container">
-            
             <h2>Nosso Blog, <br/>feito para você!</h2>
             <p>Se manter informado sobre economia é super importante, então temos um espaço exclusivo para te ajudar, dando dicas e informativos!</p>
             <div className="row">
